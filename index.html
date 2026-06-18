@@ -99,6 +99,27 @@
             background-color: #f1f5f9;
         }
 
+        /* Container para deixar o iframe do YouTube responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            margin-top: 1rem;
+            border-radius: 6px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         footer {
             background-color: #4a3728;
             color: #fff;
@@ -135,6 +156,10 @@
                 <li><strong>Flexibilidade:</strong> Eles não possuem uma clavícula rígida, o que permite que passem por qualquer espaço onde sua cabeça consiga entrar.</li>
                 <li><strong>Sono:</strong> Um gato passa, em média, dois terços da vida dormindo.</li>
             </ul>
+
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tDWeCwF-1dA?si=uxJD4KZWZljUj-Dr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
         </section>
 
         <section id="racas">
